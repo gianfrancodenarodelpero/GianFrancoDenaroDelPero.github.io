@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+/* Variables fin */
+.contenido { 
+  height: 2000px; /* Para crear desplazamiento */ 
+  padding: 20px;
+ }
+
+.btn {
+    display: inline-block;
+    padding: 15px 25;
+    color: white;
+    text-decoration: none;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0.5rem;
+  padding: 0 rem;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color:  white;
+}
+
+a:hover {
+  color:  white;
+}
+
+body {
+  width: auto;
+  height: auto;
+  font-family: var(--font-family);
+  background-image: url(https://img.freepik.com/premium-photo/smart-city-circuit-board-background-futuristic-cyberspace-concept-generative-ai_438099-15883.jpg?w=2000);
+}
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.rem 1.5rem;
+    background-color: rgb(41, 37, 37);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  nav h1 {
+    color: white;
+  }
+  
+  nav a {
+    color:  white;
+    transition: var(--transicion);
+  }
+  nav a:hover {
+    color: var(--valor-secundario);
+    border-bottom: 2px solid var(--valor-secundario);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--negrita);
+  }
+
+  nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    
+  }
+  .menu-hamburguesa {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+/* Sobre Mí */
+.Acerca_de_Mí {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+  }
+  
+  .Acerca_de_Mí h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  
+  .Acerca_de_Mí p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+  }
+
+  .Habilidades {
+    max-width: 100.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 5.5rem;
+  }
+.Habilidades img{
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 100px;
+}
+  .encabezado-habilidad {
+    margin-bottom: 1rem;
+  }
+  
+  .contenedor-habilidad img {
+    padding: 1.25rem;
+ 
+  }
+  
+  .icono {
+    width: 25.875rem;
+    height: 25.25rem;
+  }
+
+  /* SECCION CURRICULUM */
+
+  .toggle-button {
+    padding: 10px 20px;
+    background-color: #020202;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+.container {
+  position: relative;
+ 
+  display: flex;
+  justify-content: center;
+}
+
+
+.content{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: none; /* Inicialmente oculto */
+}
+.Curriculum{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px 20px;
+}
+.Curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.Curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.Curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.Curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.Curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.Curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.Curriculum .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+
+.Curriculum .fila .item{
+    padding: 25px;
+    border:3px solid #000000;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    position: relative;
+}
+.Curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.Curriculum .fila .item .casa{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.Curriculum .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+.Curriculum .fila .item p{
+    line-height: 24px;
+}
+
+/*.Curriculum .fila .izq{
+    border-right: 2px solid #000000;
+    margin-right: 20px;
+}
+.Curriculum .fila .der{
+    border-left: 2px solid #000000;
+    margin-left: 20px;
+}*/
+.Curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #000000;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.Curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #050505;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.Curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #000000;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.Curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* contenedor de imagenes del titulo */
+.container_imagenescv {
+  position: center;
+  width: 200px;
+  height: 200px;
+}
+
+.image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s ease;
+}
+
+.container_imagenescv:hover .image {
+  display: block;
+  transform: scale(1); /* Ajusta el factor de escala según tus necesidades */
+            z-index: 30;
+}
+
+.Proyectos{
+    
+  background-color: #ffffff;
+  color: #000000;
+  padding: 25px 0;
+  border: 2px solid black;
+}
+.Proyectos .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.Proyectos h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 10px ;
+}
+/*Contacto*/
+
+/* SECCION CONTACTO */
+.contacto{
+    
+    background-color: #ffffff;
+    color: #000000;
+    padding: 25px 0;
+    border: 2px solid black;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 10px ;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 110%;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    color: #000000;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #000000;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+  }
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.btn-float{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid blue;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 3rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 4rem;
+  right: 1.5rem;
+  box-shadow: 0px 0px 20px blue;
+  transition: transform 0.4s ease-out;
+}
+
+
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+  }
+
+  .submit-btn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+  }
+
+
+  .sociales {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 20%;
+  }
+  
+  .socicon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .footer {
+   display:flex;
+   align-items:center;
+   justify-content: space-between;
+   height: 100%;
+   padding: 35px;
+   flex-wrap: wrap;
+   
+  }
+
+  .footer span{
+    color:#000000;
+  }
+
+  .footer span a {
+    color: rgb(1, 1, 1);
+  }
+
+  .footer span a:hover{
+    text-decoration: underline;
+  }
+  .footer ul{
+    display: flex;
+  }
+
+  .desplazarse-hacia-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  .flecha-arriba {
+    width: 3rem;
+    height: 3rem;
+  }
+
+
+  .contador {
+    text-align: center;
+    background-color: #fff;
+   
+}
+
+h1 {
+    margin: 0 0 10px;
+}
+
+#visitas {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: transparent;
+    font-weight: bold;
+    
+    cursor: pointer;
+    position: fixed;
+    bottom: 4rem;
+    
+    box-shadow: 0px 0px 20px blue;
+    transition: transform 0.4s ease-out;
+    font-size: 4rem;
+    color: #000000;
+  }
+    
+  @media screen and (max-width: 720px) {
+    /* los cambios se reflejan en una pantalla con un ancho de 720px ye inferior */
+ }
+
+ .carrousel{
+  width: 90%;
+  max-width: 120em;
+  @include neo(1 , 1em , 1em);
+  background-color: lightskyblue;
+ }
+ .carrousel grande{
+width: 200%;
+background-color: #ff7235;
+display: flex;
+flex-flow: row nowrap;
+justify-content: flex-start;
+align-items: center;
+
+@include neo(1 , 1em , 1em);
+transition: all .5s ease;
+transform: translateX(-50%);
+ }
+
+ .carrousel .img{
+  width: calc(100% / 2);
+  min-height: 10vh;
+  @include neo(1 , 1em , 1em);
+ }
+
+ .carrousel .puntos{
+  width: 100%;
+  @include neo(1 , 1em , 1em);
+  padding: 4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1em  0 0 ;
+ }
+
+ .carrousel .punto{
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  @include neo(1 , 1em , 1em);
+ }
+
+ .carrousel .punto.activo{
+  background-color: orange;
+ }
+
+ .slide {
+  margin-top: 10px;
+ }
+
+ .slide img {
+  height: 65vh;
+ }
+/*/
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+   nav ul li {
+    margin: 8px;
+  }
+  .menu-hamburguesa {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  .mas-sobre {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .mas-sobre h2 {
+    text-align: center;
+  }
+
+  .mas-sobre p {
+    text-align: justify;
+  }
+
+  .icono {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+
+  .contenedor-proyectos {
+    flex-direction: column;
+  }
+
+  .contenedor-proyecto {
+    width: 20.875rem;
+  }
+  .contenedor-formulario-de-contacto {
+    max-width: 23.75rem;
+  }
+
+  @media screen and (max-width: 420px) {
+    .hero img {
+      height: 37.5rem;
+      width: 23rem;
+    }
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .contenedor-proyecto {
+      width: 17.875rem;
+    }
+  
+    .contenedor-formulario-de-contacto{
+      max-width: 17.75rem;
+    }
+  } 
+    */

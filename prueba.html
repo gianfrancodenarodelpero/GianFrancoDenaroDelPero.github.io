@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen al pasar el mouse</title>
+    <style>
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        .image {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container:hover .image {
+            display: block;
+        }
+
+        .container_btn {
+    margin: 20px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: none; /* Inicialmente oculto */
+}
+
+.contador {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0 0 10px;
+}
+
+#visitas {
+    font-size: 2em;
+    color: #333;
+}
+    </style>
+</head>
+<body>
+
+
+
+    <section id="Curriculum" class="Curriculum">
+        <div class="contenido-seccion">
+          <button class="toggle-button"><h2>Curriculum</h2></button>  
+          <div class="content">
+            <p>Este es el contenido del contenedor desplegable.</p>
+        </div>
+          <div class="container ">
+        </div>
+        <script src="interaccion.js"></script>
+    <!-- poner el desplegable -->
+
+
+
+    <div class="container   ">
+        <button class="toggle-button">Mostrar/Ocultar Contenido</button>
+        <div class="content">
+            <p>Este es el contenido del contenedor desplegable.</p>
+        
+    <div class="container   ">
+        <button class="toggle-button">
+          <h2>Curriculum</h2>
+        </button>
+        <div class="content">
+          <p>Este es el contenido del contenedor desplegable.</p>
+          <div class="fila">
+            <div class="col izquierda">
+              <h3>Educación</h3>
+              <div class="item izq">
+                <h4>Universidad Nacional De Lanus</h4>
+                <span class="casa">Licenciatura en sitemas</span>
+                <span class="fecha">2018 - En curso</span>
+                <p>Analista Programador Universitario (15/24)Debo 3 finales.
+                  Licenciado en Sistema (18/42)debo 4 finales.</p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+  
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>E.E.S.T.N°2 de Temperley</h4>
+                <span class="casa">Secundario Técnico en programación</span>
+                <span class="fecha">2010 - 2016</span>
+                <p></p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              <div class="item izq">
+                <h4>UTN Facultad Regional de Avellaneda</h4>
+                <span class="casa">Tramo de Formación Pedagógica para Profesionales,Técnicos Superiores y Técnicos de
+                  Nivel
+                  de Medio</span>
+                <span class="fecha">03/2022 - 10/2023</span>
+  
+                <div class="container_imagenescv">
+                  <p>Promedio 9.2</p>
+                  <img src="archivos\tramo pedagogico.jpg" alt="Imagen" class="image" />
+                </div>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+  
+              </div>
+  
+              <div class="item izq">
+                <h4>Instituto Nacional de Tecnología Industrial </h4>
+                <span class="casa">#SeProgramar</span>
+                <span class="fecha">09/2022 - 11/2022</span>
+                <div class="container_imagenescv">
+                  <p>Gobstones | Ruby | javaScript |
+                    Nota: 10 (diez)</p>
+                  <img src="archivos\titulo de se programar.jpg" alt="Imagen" class="image" />
+                </div>
+  
+                <div class="conectori">
+                  <div class="circuloi"></div>
+  
+                </div>
+              </div>
+            </div><!--class col izq-->
+  
+            <div class="col derecha">
+              <h3>Experiencia de trabajo</h3>
+              <div class="item der">
+                <h4>Trabajo en el Puerto</h4>
+  
+                <span class="casa">Puerto N°2 De Retiro</span>
+                <span class="fecha">2023 - 2024</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae
+                  aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat
+                  deserunt! Explicabo, veritatis?</p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+  
+  
+  
+  
+  
+  
+  
+              </div>
+              <div class="item der">
+                <h4>Taller de Aparados</h4>
+                <span class="casa">Nombre de Compañía</span>
+                <span class="fecha">2005 - 2008</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae
+                  aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat
+                  deserunt! Explicabo, veritatis?</p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+              <div class="item der">
+                <h4>Barberia manju</h4>
+                <span class="casa">Nombre de Compañía</span>
+                <span class="fecha">2005 - 2008</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae
+                  aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat
+                  deserunt! Explicabo, veritatis?</p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+            </div><!--div col derecha-->
+          </div><!--div class fila-->
+        </div><!--div class content-->
+      </div><!--div class conteiner-->
+        </div>
+    </div>
+
+
+    <div class="contador">
+      <h1>Contador de Visitas</h1>
+      <p id="visitas">0</p>
+  </div>
+    <script src="prueba.js"></script>
+
+    <div class="container">
+        <p>Pasa el mouse por aquí</p>
+        <img src="archivos\titulo de se programar.jpg" alt="Imagen" class="image">
+    </div>
+</body>
+</html>
